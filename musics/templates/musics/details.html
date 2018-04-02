@@ -1,0 +1,10 @@
+{% extends "musics/base.html" %}
+{% block content %}
+    <h1>
+        {{ lyric.title }}
+    </h1>
+
+    <p>
+        {{ lyric.body|linebreaks }}
+    </p>
+{% endblock %}

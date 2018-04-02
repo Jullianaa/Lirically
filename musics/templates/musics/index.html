@@ -1,0 +1,9 @@
+{% extends "musics/base.html" %}
+{% block content %}
+    <h1>Lyrics</h1>
+    <ul class="list-group list-group-flush">
+        {% for lyric in lyrics %}
+            <li class="list-group-item"><a href="{{ lyric.id }}/">{{lyric.title}}</a></li>
+        {% endfor %}
+    </ul>        
+{% endblock %}
